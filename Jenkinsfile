@@ -25,7 +25,7 @@ pipeline {
 
     stage('Deploy') {
       steps {
-        sh "kubectl apply -f /var/jenkins_home/workspace/app.yaml"
+        sh "kubectl apply -f /var/jenkins_home/workspace/test/app.yaml"
       }
     }
   }
