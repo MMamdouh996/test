@@ -10,7 +10,7 @@ pipeline {
 
     stage('Build Docker image') {
       steps {
-        sh 'docker build . -t mohamedmamdouhiv/djangoapp:v1.0 '
+        sh 'docker build . -t mohamedmamdouhiv/djangoapp:v1.0 --network host '
       }
     }
 
