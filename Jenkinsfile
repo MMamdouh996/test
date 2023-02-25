@@ -23,10 +23,10 @@ pipeline {
       }
     }
 
-//     stage('Deploy') {
-//       steps {
-//         sh "kubectl "
-//       }
-//     }
+    stage('Deploy') {
+      steps {
+        sh "kubectl apply -f /var/jenkins_home/workspace/app.yaml"
+      }
+    }
   }
 }
